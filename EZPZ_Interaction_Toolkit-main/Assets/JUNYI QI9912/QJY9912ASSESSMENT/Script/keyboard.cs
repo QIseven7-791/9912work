@@ -24,7 +24,7 @@ public class keyboard : MonoBehaviour
             enabled = false;
             alpha = 0f;
             sinOffset = Vector3.zero;
-           
+            enabled = gameObject.activeInHierarchy;
             gameObject.SetActive(false);
             return;
         }
