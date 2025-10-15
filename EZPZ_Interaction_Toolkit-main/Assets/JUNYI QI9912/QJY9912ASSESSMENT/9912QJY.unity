@@ -255,6 +255,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2748167}
   m_CullTransparentMesh: 1
+--- !u!1 &7875271
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7875272}
+  m_Layer: 0
+  m_Name: gear1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7875272
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7875271}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.1, y: 3.113, z: 0.335}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6291701503453909585}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &42421014
 GameObject:
   m_ObjectHideFlags: 0
@@ -1023,12 +1055,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6665490079df9e46a5dc57f62b5115c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 980873812}
-  bar: {fileID: 2964533154635810374}
-  moveY: -5
-  rotZ: 20
-  speed: 3
-  busy: 0
 --- !u!82 &147134669
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2254,12 +2280,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6665490079df9e46a5dc57f62b5115c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 980873812}
-  bar: {fileID: 2964533154635810374}
-  moveY: -5
-  rotZ: 20
-  speed: 3
-  busy: 0
 --- !u!82 &226336161
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2798,12 +2818,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6665490079df9e46a5dc57f62b5115c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 980873812}
-  bar: {fileID: 2964533154635810374}
-  moveY: -5
-  rotZ: 20
-  speed: 3
-  busy: 0
 --- !u!82 &281726822
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2981,12 +2995,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6665490079df9e46a5dc57f62b5115c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 980873812}
-  bar: {fileID: 2964533154635810374}
-  moveY: -5
-  rotZ: 20
-  speed: 3
-  busy: 0
 --- !u!82 &294756159
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3164,12 +3172,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6665490079df9e46a5dc57f62b5115c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 980873812}
-  bar: {fileID: 2964533154635810374}
-  moveY: -5
-  rotZ: 20
-  speed: 3
-  busy: 0
 --- !u!82 &306202542
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3347,12 +3349,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6665490079df9e46a5dc57f62b5115c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 980873812}
-  bar: {fileID: 2964533154635810374}
-  moveY: -5
-  rotZ: 20
-  speed: 3
-  busy: 0
 --- !u!82 &318420602
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3477,6 +3473,7 @@ GameObject:
   - component: {fileID: 335280883}
   - component: {fileID: 335280885}
   - component: {fileID: 335280886}
+  - component: {fileID: 335280887}
   m_Layer: 0
   m_Name: '? script'
   m_TagString: Untagged
@@ -3530,12 +3527,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6665490079df9e46a5dc57f62b5115c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 980873812}
-  bar: {fileID: 2964533154635810374}
-  moveY: -5
-  rotZ: 20
-  speed: 3
-  busy: 0
 --- !u!82 &335280885
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3647,6 +3638,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   letter: '?'
   tmpText: {fileID: 500519445}
+--- !u!114 &335280887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335280881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0bedc61ef9dada4d93b5c3872806083, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  angle: 10
+  speed: 2
+  target: {fileID: 7875272}
 --- !u!1 &351501686
 GameObject:
   m_ObjectHideFlags: 0
@@ -3985,12 +3991,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6665490079df9e46a5dc57f62b5115c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 980873812}
-  bar: {fileID: 2964533154635810374}
-  moveY: -5
-  rotZ: 20
-  speed: 3
-  busy: 0
 --- !u!82 &367947024
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4442,12 +4442,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6665490079df9e46a5dc57f62b5115c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 980873812}
-  bar: {fileID: 2964533154635810374}
-  moveY: -5
-  rotZ: 20
-  speed: 3
-  busy: 0
 --- !u!82 &442457430
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4734,12 +4728,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6665490079df9e46a5dc57f62b5115c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 980873812}
-  bar: {fileID: 2964533154635810374}
-  moveY: -5
-  rotZ: 20
-  speed: 3
-  busy: 0
 --- !u!82 &458867853
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5543,12 +5531,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6665490079df9e46a5dc57f62b5115c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 980873812}
-  bar: {fileID: 2964533154635810374}
-  moveY: -5
-  rotZ: 20
-  speed: 3
-  busy: 0
 --- !u!82 &534953898
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6175,12 +6157,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6665490079df9e46a5dc57f62b5115c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 980873812}
-  bar: {fileID: 2964533154635810374}
-  moveY: -5
-  rotZ: 20
-  speed: 3
-  busy: 0
 --- !u!82 &621992474
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6536,12 +6512,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6665490079df9e46a5dc57f62b5115c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 980873812}
-  bar: {fileID: 2964533154635810374}
-  moveY: -5
-  rotZ: 20
-  speed: 3
-  busy: 0
 --- !u!82 &632771696
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6863,12 +6833,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6665490079df9e46a5dc57f62b5115c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 980873812}
-  bar: {fileID: 2964533154635810374}
-  moveY: -5
-  rotZ: 20
-  speed: 3
-  busy: 0
 --- !u!82 &690646247
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7046,12 +7010,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6665490079df9e46a5dc57f62b5115c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 980873812}
-  bar: {fileID: 2964533154635810374}
-  moveY: -5
-  rotZ: 20
-  speed: 3
-  busy: 0
 --- !u!82 &697896584
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7641,12 +7599,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6665490079df9e46a5dc57f62b5115c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 980873812}
-  bar: {fileID: 2964533154635810374}
-  moveY: -5
-  rotZ: 20
-  speed: 3
-  busy: 0
 --- !u!82 &759857787
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8464,12 +8416,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6665490079df9e46a5dc57f62b5115c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 980873812}
-  bar: {fileID: 2964533154635810374}
-  moveY: -5
-  rotZ: 20
-  speed: 3
-  busy: 0
 --- !u!82 &864818252
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9344,12 +9290,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6665490079df9e46a5dc57f62b5115c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 980873812}
-  bar: {fileID: 2964533154635810374}
-  moveY: -5
-  rotZ: 20
-  speed: 3
-  busy: 0
 --- !u!82 &989601156
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9527,12 +9467,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6665490079df9e46a5dc57f62b5115c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 980873812}
-  bar: {fileID: 2964533154635810374}
-  moveY: -5
-  rotZ: 20
-  speed: 3
-  busy: 0
 --- !u!82 &990051354
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10306,7 +10240,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6291701503453909585}
   - {fileID: 6856461161234946072}
   - {fileID: 3216192686578364741}
   - {fileID: 8816463234463242378}
@@ -10378,12 +10311,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6665490079df9e46a5dc57f62b5115c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 980873812}
-  bar: {fileID: 2964533154635810374}
-  moveY: -5
-  rotZ: 20
-  speed: 3
-  busy: 0
 --- !u!82 &1129831391
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10806,12 +10733,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6665490079df9e46a5dc57f62b5115c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 980873812}
-  bar: {fileID: 2964533154635810374}
-  moveY: -5
-  rotZ: 20
-  speed: 3
-  busy: 0
 --- !u!82 &1151686486
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11880,12 +11801,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6665490079df9e46a5dc57f62b5115c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 980873812}
-  bar: {fileID: 2964533154635810374}
-  moveY: -5
-  rotZ: 20
-  speed: 3
-  busy: 0
 --- !u!82 &1247272146
 AudioSource:
   m_ObjectHideFlags: 0
@@ -13098,12 +13013,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6665490079df9e46a5dc57f62b5115c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 980873812}
-  bar: {fileID: 2964533154635810374}
-  moveY: -5
-  rotZ: 20
-  speed: 3
-  busy: 0
 --- !u!82 &1333652834
 AudioSource:
   m_ObjectHideFlags: 0
@@ -13736,12 +13645,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6665490079df9e46a5dc57f62b5115c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 980873812}
-  bar: {fileID: 2964533154635810374}
-  moveY: -5
-  rotZ: 20
-  speed: 3
-  busy: 0
 --- !u!82 &1375784358
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14273,12 +14176,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6665490079df9e46a5dc57f62b5115c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 980873812}
-  bar: {fileID: 2964533154635810374}
-  moveY: -5
-  rotZ: 20
-  speed: 3
-  busy: 0
 --- !u!82 &1403920932
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14456,12 +14353,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6665490079df9e46a5dc57f62b5115c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 980873812}
-  bar: {fileID: 2964533154635810374}
-  moveY: -5
-  rotZ: 20
-  speed: 3
-  busy: 0
 --- !u!82 &1410187854
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14639,12 +14530,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6665490079df9e46a5dc57f62b5115c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 980873812}
-  bar: {fileID: 2964533154635810374}
-  moveY: -5
-  rotZ: 20
-  speed: 3
-  busy: 0
 --- !u!82 &1431181974
 AudioSource:
   m_ObjectHideFlags: 0
@@ -15177,12 +15062,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6665490079df9e46a5dc57f62b5115c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 980873812}
-  bar: {fileID: 2964533154635810374}
-  moveY: -5
-  rotZ: 20
-  speed: 3
-  busy: 0
 --- !u!82 &1493739237
 AudioSource:
   m_ObjectHideFlags: 0
@@ -15784,12 +15663,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6665490079df9e46a5dc57f62b5115c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 980873812}
-  bar: {fileID: 2964533154635810374}
-  moveY: -5
-  rotZ: 20
-  speed: 3
-  busy: 0
 --- !u!82 &1601883773
 AudioSource:
   m_ObjectHideFlags: 0
@@ -15967,12 +15840,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6665490079df9e46a5dc57f62b5115c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 980873812}
-  bar: {fileID: 2964533154635810374}
-  moveY: -5
-  rotZ: 20
-  speed: 3
-  busy: 0
 --- !u!82 &1603308565
 AudioSource:
   m_ObjectHideFlags: 0
@@ -17580,12 +17447,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6665490079df9e46a5dc57f62b5115c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 980873812}
-  bar: {fileID: 2964533154635810374}
-  moveY: -5
-  rotZ: 20
-  speed: 3
-  busy: 0
 --- !u!82 &1714246296
 AudioSource:
   m_ObjectHideFlags: 0
@@ -17899,12 +17760,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6665490079df9e46a5dc57f62b5115c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 980873812}
-  bar: {fileID: 2964533154635810374}
-  moveY: -5
-  rotZ: 20
-  speed: 3
-  busy: 0
 --- !u!82 &1782768813
 AudioSource:
   m_ObjectHideFlags: 0
@@ -18082,12 +17937,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6665490079df9e46a5dc57f62b5115c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 980873812}
-  bar: {fileID: 2964533154635810374}
-  moveY: -5
-  rotZ: 20
-  speed: 3
-  busy: 0
 --- !u!82 &1789379491
 AudioSource:
   m_ObjectHideFlags: 0
@@ -18809,12 +18658,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6665490079df9e46a5dc57f62b5115c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 980873812}
-  bar: {fileID: 2964533154635810374}
-  moveY: -5
-  rotZ: 20
-  speed: 3
-  busy: 0
 --- !u!82 &1864161924
 AudioSource:
   m_ObjectHideFlags: 0
@@ -19244,12 +19087,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6665490079df9e46a5dc57f62b5115c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 980873812}
-  bar: {fileID: 2964533154635810374}
-  moveY: -5
-  rotZ: 20
-  speed: 3
-  busy: 0
 --- !u!82 &1885816635
 AudioSource:
   m_ObjectHideFlags: 0
@@ -19844,12 +19681,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6665490079df9e46a5dc57f62b5115c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 980873812}
-  bar: {fileID: 2964533154635810374}
-  moveY: -5
-  rotZ: 20
-  speed: 3
-  busy: 0
 --- !u!82 &1915739322
 AudioSource:
   m_ObjectHideFlags: 0
@@ -20240,12 +20071,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6665490079df9e46a5dc57f62b5115c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 980873812}
-  bar: {fileID: 2964533154635810374}
-  moveY: -5
-  rotZ: 20
-  speed: 3
-  busy: 0
 --- !u!1 &1932223982
 GameObject:
   m_ObjectHideFlags: 0
@@ -20557,12 +20382,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6665490079df9e46a5dc57f62b5115c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 980873812}
-  bar: {fileID: 2964533154635810374}
-  moveY: -5
-  rotZ: 20
-  speed: 3
-  busy: 0
 --- !u!82 &1948157803
 AudioSource:
   m_ObjectHideFlags: 0
@@ -20740,12 +20559,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6665490079df9e46a5dc57f62b5115c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 980873812}
-  bar: {fileID: 2964533154635810374}
-  moveY: -5
-  rotZ: 20
-  speed: 3
-  busy: 0
 --- !u!82 &1967363341
 AudioSource:
   m_ObjectHideFlags: 0
@@ -21549,12 +21362,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6665490079df9e46a5dc57f62b5115c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 980873812}
-  bar: {fileID: 2964533154635810374}
-  moveY: -5
-  rotZ: 20
-  speed: 3
-  busy: 0
 --- !u!82 &1986099378
 AudioSource:
   m_ObjectHideFlags: 0
@@ -22336,12 +22143,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6665490079df9e46a5dc57f62b5115c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 980873812}
-  bar: {fileID: 2964533154635810374}
-  moveY: -5
-  rotZ: 20
-  speed: 3
-  busy: 0
 --- !u!82 &2040954364
 AudioSource:
   m_ObjectHideFlags: 0
@@ -23179,12 +22980,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6665490079df9e46a5dc57f62b5115c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 980873812}
-  bar: {fileID: 2964533154635810374}
-  moveY: -5
-  rotZ: 20
-  speed: 3
-  busy: 0
 --- !u!82 &2088933575
 AudioSource:
   m_ObjectHideFlags: 0
@@ -23452,12 +23247,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6665490079df9e46a5dc57f62b5115c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 980873812}
-  bar: {fileID: 2964533154635810374}
-  moveY: -5
-  rotZ: 20
-  speed: 3
-  busy: 0
 --- !u!114 &2095956930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41386,11 +41175,11 @@ Transform:
   m_GameObject: {fileID: 5384786505297650397}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.97342, y: -0.763, z: 0.18305996}
+  m_LocalScale: {x: 0.4027186, y: 0.4027186, z: 0.4027186}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1095119775}
+  m_Father: {fileID: 7875272}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &6292170790708415536
 MeshRenderer:
@@ -48959,3 +48748,4 @@ SceneRoots:
   - {fileID: 1978810073}
   - {fileID: 543450652136384742}
   - {fileID: 382745624}
+  - {fileID: 7875272}

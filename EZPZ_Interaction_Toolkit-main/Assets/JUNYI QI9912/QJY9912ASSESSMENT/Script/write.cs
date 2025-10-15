@@ -4,8 +4,8 @@ using TMPro;
 
 public class TypeKeyToText : MonoBehaviour
 {
-    public string letter; // 要输入的字母
-    public TMP_Text tmpText;      // TMP 文本
+    public string letter;
+    public TMP_Text tmpText;   
 
     void OnEnable()
     {

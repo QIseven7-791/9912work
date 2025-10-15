@@ -4,6 +4,7 @@ public class SPIN : MonoBehaviour
 {
     public float angle;
     public float speed;
+    public Transform target;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -13,6 +14,6 @@ public class SPIN : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(0, Time.deltaTime*angle, 0);
+        target.Rotate(Time.deltaTime * angle, 0, 0);
     }
 }
