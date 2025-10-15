@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class writerstick : MonoBehaviour
 {
-    public Transform target;       // 要旋转的物体
-    public Vector3 axis = Vector3.right; // 旋转轴（默认X轴）
-    public float angle = 30f;      // 目标角度
-    public float speed = 200f;     // 旋转速度（度/秒）
+    public Transform target;       
+    public Vector3 axis = Vector3.right; 
+    public float angle = 30f;      
+    public float speed = 200f;     
 
     private bool goingForward = true;
     private float current = 0f;
@@ -28,7 +28,7 @@ public class writerstick : MonoBehaviour
             if (current >= angle)
             {
                 current = angle;
-                goingForward = false; // 到达目标后开始回弹
+                goingForward = false; 
             }
         }
         else
