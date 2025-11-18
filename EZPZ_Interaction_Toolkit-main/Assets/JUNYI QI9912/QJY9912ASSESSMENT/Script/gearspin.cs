@@ -13,7 +13,7 @@ public class gearspin : MonoBehaviour
     // Update is called once per frame
     void OnEnable()
     {
-        if (!target) target = transform;
+        
         target.localRotation *= Quaternion.Euler(gearangle);
     }
 }

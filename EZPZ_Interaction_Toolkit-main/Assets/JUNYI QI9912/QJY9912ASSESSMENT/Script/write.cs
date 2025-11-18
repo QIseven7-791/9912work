@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class TypeKeyToText : MonoBehaviour
+public class write : MonoBehaviour
 {
     public string letter;
     public TMP_Text tmpText;   
