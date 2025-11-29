@@ -1,7 +1,7 @@
 using UnityEngine;
 using TMPro;
 
-public class TypewriterAutoLine : MonoBehaviour
+public class linebreak : MonoBehaviour
 {
     public TextMeshProUGUI Text;  
     public int maxCharsPerLine = 25;      
