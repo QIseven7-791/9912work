@@ -3,15 +3,15 @@ using System.Collections;
 
 public class paper : MonoBehaviour
 {
-    public GameObject[] objectsToShow;     // 依次显示的物体
-    public float showInterval = 0.5f;      // 每个显示间隔
+    public GameObject[] objectsToShow;    
+    public float showInterval = 0.5f;      
 
-    public GameObject objectToMove;        // 要移动和旋转的物体
-    public Transform moveTarget;           // 移动目标位置
-    public float moveSpeed = 1f;           // 移动速度
+    public GameObject objectToMove;        
+    public Transform moveTarget;           
+    public float moveSpeed = 1f;          
 
-    public Vector3 rotateAngle = new Vector3(0, 90, 0); // 旋转角度
-    public float rotateSpeed = 90f;         // 旋转速度（度/秒）
+    public Vector3 rotateAngle = new Vector3(0, 90, 0); 
+    public float rotateSpeed = 90f;         
 
     private void OnEnable()
     {

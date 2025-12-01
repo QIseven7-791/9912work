@@ -1,16 +1,16 @@
 using UnityEngine;
-using TMPro; // 如果你用的是 TextMeshPro
+using TMPro; 
 
 public class Textcheck : MonoBehaviour
 {
-    public TMP_Text textBox;  // 绑定 TMP 文本框
+    public TMP_Text textBox; 
 
     [System.Serializable]
     public class TriggerRule
     {
-        public string keyword;              // 检测关键字
-        public GameObject[] targetObjects;  // 多个目标物体
-        public bool setActive;              // 要设置的显示状态
+        public string keyword;              
+        public GameObject[] targetObjects;  
+        public bool setActive;              
     }
 
     public TriggerRule[] rules;
@@ -23,7 +23,7 @@ public class Textcheck : MonoBehaviour
 
         string currentText = textBox.text;
 
-        // 文本变动时执行检查
+        
         if (currentText != lastText)
         {
             lastText = currentText;
