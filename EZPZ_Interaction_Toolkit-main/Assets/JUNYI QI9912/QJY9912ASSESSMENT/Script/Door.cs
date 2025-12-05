@@ -4,7 +4,7 @@ public class Door : MonoBehaviour
 {
     public float TargetAngle = 90f;         
     public float RotateSpeed = 90f;        
-    public bool OpenDoor = false;       
+    public bool OpenDoor = true;       
 
     private bool OpeningDoor = false;
     private Quaternion InitialAngle;
