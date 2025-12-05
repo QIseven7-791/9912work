@@ -129456,9 +129456,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2630795e8d8c814ab61889730c9f497, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "\u76EE\u6807\u89D2\u5EA6": -90
-  "\u65CB\u8F6C\u901F\u5EA6": 90
-  "\u81EA\u52A8\u5F00\u542F": 1
+  TargetAngle: 90
+  RotateSpeed: 90
+  OpenDoor: 1
 --- !u!4 &620141940 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7992629985860295614, guid: 02858d4d16dfc874198537d11046e408, type: 3}
@@ -229394,7 +229394,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1087878500}
-  - component: {fileID: 1087878499}
+  - component: {fileID: 1087878501}
   m_Layer: 0
   m_Name: door open
   m_TagString: Untagged
@@ -229402,21 +229402,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1087878499
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1087878498}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2630795e8d8c814ab61889730c9f497, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  "\u76EE\u6807\u89D2\u5EA6": 90
-  "\u65CB\u8F6C\u901F\u5EA6": 180
-  "\u81EA\u52A8\u5F00\u542F": 1
 --- !u!4 &1087878500
 Transform:
   m_ObjectHideFlags: 0
@@ -229433,6 +229418,21 @@ Transform:
   - {fileID: 132427190}
   m_Father: {fileID: 1752346009}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1087878501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1087878498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2630795e8d8c814ab61889730c9f497, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetAngle: 90
+  RotateSpeed: 90
+  OpenDoor: 1
 --- !u!1 &1088161465
 GameObject:
   m_ObjectHideFlags: 0

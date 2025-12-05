@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class cameracontrol : MonoBehaviour
 {
-    public Camera mainCamera;        // 拖拽你的 Main Camera
-    public float targetFOV = 30f;    // 最终要缩小到的视野范围
-    public float zoomSpeed = 20f;    // 缩放速度
+    public Camera mainCamera;       
+    public float targetFOV = 30f;    
+    public float zoomSpeed = 20f;    
 
     private bool isZooming = false;
 
@@ -25,7 +25,7 @@ public class cameracontrol : MonoBehaviour
         isZooming = true;
     }
 
-    public float originalFOV = 60f;  // 恢复到默认视野
+    public float originalFOV = 60f; 
     public void ResetZoom()
     {
         mainCamera.fieldOfView = originalFOV;
